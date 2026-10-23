@@ -1,0 +1,18 @@
+/* Estilo visual e organização responsiva dos cinco sites. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f4fa; color: #292138; font-family: Arial, sans-serif; }
+header, main, footer { max-width: 1160px; margin: auto; }
+header { padding: 45px 24px 26px; }
+.etiqueta { color: #7c437f; font-size: 12px; font-weight: bold; letter-spacing: 3px; }
+header h1 { font-size: 32px; line-height: 1.2; max-width: 870px; margin: 14px 0; }
+header > p:last-child { color: #655b70; }
+main { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 24px; }
+.site { background: white; border: 1px solid #e5deec; border-radius: 16px; padding: 18px; }
+.site h1 { font-size: 20px; margin: 0 0 14px; }
+.site img { width: 100%; height: auto; display: block; border-radius: 10px; }
+.acessar { color: #633b78; display: inline-block; margin-top: 16px; font-size: 15px; font-weight: bold; }
+.site p { color: #655b70; font-size: 13px; line-height: 1.5; margin-bottom: 0; }
+a:focus-visible { outline: 3px solid #b872ac; outline-offset: 4px; }
+footer { padding: 24px; color: #766b80; font-size: 12px; line-height: 1.5; }
+@media (max-width: 850px) { main { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { main { grid-template-columns: 1fr; } header h1 { font-size: 26px; } }
